@@ -1,0 +1,10 @@
+def max_profit(prices):
+    min_price=float('inf')
+    maxprofit=0
+    for i in prices:
+        min_price=min(min_price,i)
+        profit=i-min_price
+        maxprofit=max(maxprofit,profit)
+    return maxprofit
+prices=[7,1,5,3,6,4]
+print(max_profit(prices))
